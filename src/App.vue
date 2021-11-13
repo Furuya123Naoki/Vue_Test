@@ -65,17 +65,6 @@ export default {
             map: vm.map,
           };
 
-          // let circle = new window.google.maps.Circle({
-          // map: vm.map,
-          // center: latlng,
-          // radius: vm.distance,
-          // fillColor: "#ff0000",
-          // fillOpacity: 0.3,
-          // strokeColor: "#ff0000",
-          // strokeOpacity: 0.5,
-          // strokeWeight: 1,
-          // });
-
           let service = new window.google.maps.places.PlacesService(vm.map);
           service.nearbySearch(request, Result_Places);
 
@@ -349,17 +338,6 @@ export default {
           types: ["restaurant", "cafe"], // ※２ typesプロパティの施設タイプを設定
           map: vm.map,
         };
-
-        // let circle = new window.google.maps.Circle({
-        // map: vm.map,
-        // center: latlng,
-        // radius: vm.distance,
-        // fillColor: "#ff0000",
-        // fillOpacity: 0.3,
-        // strokeColor: "#ff0000",
-        // strokeOpacity: 0.5,
-        // strokeWeight: 1,
-        // });
 
         let service = new window.google.maps.places.PlacesService(vm.map);
         service.nearbySearch(request, Result_Places);
